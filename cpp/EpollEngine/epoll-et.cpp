@@ -1,6 +1,3 @@
-# 整理中
-
-``` cpp
 /*
  * 编译：c++ -o epoll-et epoll-et.cc
  * 运行： ./epoll-et
@@ -171,4 +168,3 @@ int main(int argc, const char* argv[]) {
     }
     return 0;
 }
-```
