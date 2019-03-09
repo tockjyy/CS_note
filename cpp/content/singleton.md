@@ -64,8 +64,8 @@ private:
         }
     };
     Singleton(void);
-    Singleton(const Singleton&);
-    Singleton& operator= (const Singleton&);
+    Singleton(const Singleton&);                //赋值构造私有化就等于删除
+    Singleton& operator= (const Singleton&);    //赋值函数私有化就等于删除
 };
 
 template <class T>

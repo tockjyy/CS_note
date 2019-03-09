@@ -1,29 +1,50 @@
 
-# Blog
-## 1.一些简单的C++方法经验
 
-### 1.1.对C++代码美观性的看法
+# 1.C++编程技巧笔记
 
-```cpp
-看过许多C++98年代的代码，对比STL和网上一些漂亮的开源代码后，总结出的优美的语言规范（只捡我认为最重要的说）：
-1.尽可能的使用template(模板)类和函数，STL库的编码中就运用了大量的模板类，如vector<int>或map<int,string>，咱自己的程序也这么写的话，耐看且好用，我后面写的一些实例基本上都用到了。
-2.尽可能的使用opeartor(运算符重载)函数，方便使用，可以避免取一些有明显个人风格的函数名，STL中也是大幅度使用。
-3.尽可能的消除extern修饰的全局变量，这都是C语言时代的风格了，功能是能很好的实现，不过实话是真难看，写得到处声明，一改到处改，推荐使用单例来替代全局变量。
-4.尽可能的进行类继承，类成员变量和函数可以私有的尽量私有，这样就有黑盒的效果在里面，查错的时候耦合性会大大降低。
-5.善加利用对象池，特殊情况下可以优化很多的内存释放性能
-6.原生指针和智能指针的优劣我不好评说，原生指针的效率肯定是最好的，不过呢，开心就好。
+## 1.1.Effective C++
+
+- [1.关于const,enum,inline与define的使用](effective/1.md)
 ```
+1.Define与Const
+2.Define与Inline
+3.Define与Enum
+```
+- [2.尽可能的多使用const](effective/2.md)
+```
+1.常量指针的特性
+2.返回值使用const的好处
+3.const成员函数
+4.mutable与const
+5.避免重复const和non-const两种不同代码的方法
+```
+- [3.有关类初始化的问题](effective/3.md)
+```
+1.内置类型请一定注意初始化
+2.成员变量初始化时尽量使用成员初始列
+3.跨编译单元类型初始化顺序问题
+```
+- 持续更新中
 
-### [1.2.线程安全的对象池编写与详细解释](content/objectpool.md)
 
-### [1.3.简单的单例类编写](content/singleton.md)
 
-### [1.4.简单的单例保护类编写](content/singleton_protect.md)
+# 2.一些简单的C++方法经验
 
-### [1.5.简单的线程安全的工作队列的编写](content/work_queue.md)
+### [线程安全的对象池编写与详细解释](content/objectpool.md)
 
-### [1.6.简单的协议路由类的编写](content/proto_route.md)
+### [简单的单例类编写](content/singleton.md)
 
-### [1.7.实用的网络消息缓存类的编写](content/message_buffer.md)
+### [简单的单例保护类编写](content/singleton_protect.md)
 
-### [1.8.c++11到c++17的特性对c++编程者的影响](content/cpp11_exp.md)
+### [简单的线程安全的工作队列的编写](content/work_queue.md)
+
+### [简单的协议路由类的编写](content/proto_route.md)
+
+### [实用的网络消息缓存类的编写](content/message_buffer.md)
+
+### [c++11到c++17的特性对c++编程者的影响](content/cpp11_exp.md)
+
+## 参考资料
+- C++ reference : (https://en.cppreference.com/w/cpp)
+- Effective C++ 改善程序与设计的55个具体做法 第三版(作者：Scott Meyers)
+- More Effective C++ 35个改善程序与设计的有效方法(作者：Scott Meyers)
