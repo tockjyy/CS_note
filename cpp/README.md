@@ -42,11 +42,16 @@
 1.令operator操作符返回一个*this的引用的用途
 2.在operator=处理自我赋值
 ```
+- [8.自建拷贝函数时的注意点](effective/8.md)
+- [9.使用智能指针来进行资源管理](effective/9.md)
 - 持续更新中
 
 
+# 2.一些自己总结的开发手段
+- [1.多用operator操作符](note/operator.md)
 
-# 2.一些简单的C++方法经验
+
+# 3.一些简单的C++方法经验
 
 ### [线程安全的对象池编写与详细解释](content/objectpool.md)
 
